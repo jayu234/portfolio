@@ -25,7 +25,7 @@ const Work = () => {
               animate='show'
               exit='hidden'
               className="mb-4 max-w-[400px] mx-auto lg:mx-0">
-              Here are few projects I've worked on recently.
+              Here are few projects I&apos;ve worked on recently.
             </motion.p>
           </div>
           <motion.div

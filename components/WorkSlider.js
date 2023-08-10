@@ -18,7 +18,7 @@ const workSlides = {
           path: '/campusconnect.png',
           link: {
             github: "https://github.com/jayu234/campus-connect",
-            demo: "https://my-enotebook.netlify.app/",
+            demo: "https://campus-connect-1fq8.onrender.com/",
           },
         },
         {
@@ -95,10 +95,10 @@ const WorkSlider = () => {
                         <div className="absolute bottom-0 translate-y-full group-hover:-translate-y-12 group-hover:xl:-translate-y-20 transition-all duration-300">
                           <div className="flex items-center gap-x-2 text-[13px] tracking-[0.2em]">
                             <div className="delay-100 text-xl cursor-pointer">
-                              <Link href={image.link.github}><BsGithub/></Link>
+                              <Link target="_blank" rel="noopener noreferrer" href={image.link.github}><BsGithub/></Link>
                             </div>
                             <div className="text-xl mx-4 cursor-pointer translate-y-[500%] group-hover:translate-y-0 transition-all delay-150 duration-300">
-                              <Link href={image.link.demo}><BsLink/></Link>
+                              <Link target="_blank" rel="noopener noreferrer" href={image.link.demo}><BsLink/></Link>
                             </div>
                             {/* <div className=" text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200"><BsArrowRight/></div> */}
                           </div>

@@ -1,11 +1,8 @@
 import Image from "next/image";
-
 import ParticlesContainer from "../components/ParticlesContainer"
 import ProjectsBtn from "../components/ProjectsBtn"
 import Avatar from "../components/Avatar"
 import { motion } from "framer-motion";
-
-
 import { fadeIn } from "../variants"
 import { TypeAnimation } from "react-type-animation";
 
@@ -21,7 +18,7 @@ const Home = () => {
             exit='hidden'
             className="h2"
           >
-            Hi there! <span className="inline-block"><img src="/waving_hand.gif" width="45px" /></span>
+            Hi there! <span className="inline-block"><Image src="/waving_hand.gif" width={45} height={45} alt=""/></span>
             {/* <span className="text-accent">I am a </span> */}
             <div className="text-lg mt-4">
               <span className="text-[30px] md:text-[40px] mt-8">I'm Jaivik Goswami.</span>

@@ -11,26 +11,26 @@ export const aboutData = [
       {
         title: 'Frontend',
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <SiRedux />,
+          <FaHtml5 key={"html"}/>,
+          <FaCss3 key={"css"}/>,
+          <FaJs key={"js"}/>,
+          <FaReact key={"react"}/>,
+          <SiNextdotjs key={"next"}/>,
+          <SiFramer key={"framer"}/>,
+          <SiRedux key={"redux"}/>,
         ],
       },
       {
         title: 'Backend',
-        icons: [<FaNodeJs />, <SiExpress />, <SiSocketdotio />],
+        icons: [<FaNodeJs key={"node"} />, <SiExpress key={"express"}/>, <SiSocketdotio key={"socket"}/>],
       },
       {
         title: 'Databases',
-        icons: [<SiMongodb />, <SiMysql />, <SiPostgresql />],
+        icons: [<SiMongodb key={"mongo"}/>, <SiMysql key={"mysql"}/>, <SiPostgresql key={"postgres"}/>],
       },
       {
         title: 'Other Tools',
-        icons: [<FaFigma />, <SiCanva />, <SiVisualstudiocode />, <SiPostman />],
+        icons: [<FaFigma key={"figma"}/>, <SiCanva key={"canva"}/>, <SiVisualstudiocode key={"vscode"}/>, <SiPostman key={"postman"} />],
       },
     ],
   },
@@ -66,8 +66,6 @@ import Circles from "../../components/Circles"
 import Avatar from "../../components/Avatar";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
-
-import CountUp from "react-countup";
 
 const About = () => {
   const [index, setIndex] = useState(0);
@@ -172,7 +170,7 @@ const About = () => {
                   <div>{item.stage}</div>
                   <div className="flex gap-x-4">
                     {item.icons?.map((icon, itemIndex) => {
-                      return <div className="text-2xl text-white">{icon}</div>
+                      return <div key={itemIndex} className="text-2xl text-white">{icon}</div>
                     })}
                   </div>
                 </div>
