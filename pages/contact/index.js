@@ -85,17 +85,17 @@ const Contact = () => {
           onSubmit={handleSubmit}
         >
           <div className="flex gap-x-6 w-full">
-            <input type="text" name="name" placeholder="name" className="input"
+            <input type="text" name="name" placeholder="Name" className="input"
               value={form.name}
               onChange={handleChange}
             />
-            <input type="email" name='email' placeholder="email" className="input"
+            <input type="email" name='email' placeholder="Email" className="input"
               value={form.email}
               onChange={handleChange}
             />
           </div>
           <input type="text" name="subject" onChange={handleChange} placeholder="subject" value={form.subject} className="input" />
-          <textarea name='message' placeholder="message" className="textarea"
+          <textarea name='message' placeholder="Message" className="textarea"
             value={form.message}
             onChange={handleChange}
           />
