@@ -18,7 +18,7 @@ const Home = () => {
             exit='hidden'
             className="h2"
           >
-            Hi there! <span className="inline-block"><Image src="/waving_hand.gif" width={45} height={45} alt=""/></span>
+            Hi there! <span className="inline-block"><Image src="/waving_hand.gif" width={45} height={45} alt="" /></span>
             {/* <span className="text-accent">I am a </span> */}
             <div className="text-lg mt-4">
               <span className="text-[30px] md:text-[40px] mt-8">I'm Jaivik Goswami.</span>
@@ -34,7 +34,7 @@ const Home = () => {
                   ]}
                   wrapper="span"
                   speed={50}
-                  style={{display: 'inline-block', color: "#F13024" }}
+                  style={{ display: 'inline-block', color: "#F13024" }}
                   repeat={Infinity}
                 />
               </div>
@@ -48,9 +48,14 @@ const Home = () => {
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
           </motion.p>
-          <div className="flex justify-center xl:hidden relative">
+          <motion.div
+            variants={fadeIn('down', 0.4)}
+            initial='hidden'
+            animate='show'
+            exit='hidden'
+            className="flex justify-center xl:hidden relative">
             <ProjectsBtn />
-          </div>
+          </motion.div>
           <motion.div
             variants={fadeIn('down', 0.4)}
             initial='hidden'
@@ -71,7 +76,7 @@ const Home = () => {
           animate='show'
           exit='hidden'
           transition={{ duration: 1, ease: 'easeInOut' }}
-          className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[8%] ">
+          className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[14%] ">
           <Avatar />
         </motion.div>
       </div>
